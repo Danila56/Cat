@@ -6,21 +6,22 @@ public class Cat {
     private double originWeight;
     private double maxWeight;
     private double minWeight;
-    private static int count;
+    public static int count;
     private double eat;
 
     public Cat(){
-        weight = 1500.0 + 3000.0 * Math.random();
+        this(1500.0 + 3000.0 * Math.random());
+    }
+
+    public Cat(double weight){
+        this.weight=weight;
         originWeight = weight;
         maxWeight = 9000.0;
         minWeight = 1000.0;
         count++;
     }
 
-    public Cat(double weight){
-        this.weight = weight;
-        this(maxWeight, minWeight);
-    }
+
 
     public double getWeight(){
         return weight;

@@ -5,20 +5,15 @@ public class Main {
     public static void main(String[] args){
         Cat barsik = new Cat();
         System.out.println(barsik.getWeight());
+        barsik.feed(10000.0);
         System.out.println(barsik.getStatus());
-        barsik.feed(20.5);
-        System.out.println(barsik.getWeight());
-        System.out.println(barsik.getStatus());
-        barsik.meuw();
-        System.out.println(barsik.getWeight());
-        System.out.println(barsik.getStatus());
-        barsik.tualet(50);
-        System.out.println(barsik.getWeight());
-        System.out.println("After tualet - " + barsik.getStatus());
-        System.out.println("Count - " + barsik.getCount());
-        Cat mursik = new Cat();
-        Cat kisa = new Cat();
-        System.out.println("Count - " + barsik.getCount());
-        System.out.println("Eat - "+barsik.getEat());
+        System.out.println(Cat.getCount());
+        System.out.println(barsik.count);
+//        Citen name = new Citen();
+//        System.out.println(name.X+" "+name.Y);
+//        Citen name2 = new Citen(4,20);
+//        System.out.println(name2.X+" "+name2.Y);
+//        Citen name3 = new Citen(1000);
+//        System.out.println(name3.X);
     }
 }
